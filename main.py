@@ -6,7 +6,7 @@ import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'  # Oculta mensajes de INFO y WARNING
 
 # Load the data from CSV
-data = pd.read_csv('Data/celsius_fahrenheit_data.csv')
+data = pd.read_csv('datasets/celsius_fahrenheit_data.csv')
 celsius = data['Celsius'].values
 fahrenheit = data['Fahrenheit'].values
 
