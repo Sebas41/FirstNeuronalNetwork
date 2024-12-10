@@ -1,13 +1,14 @@
 import tensorflow as tf
-import numpy as np
+import pandas as pd
 import matplotlib.pyplot as plt
+import numpy as np
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'  # Oculta mensajes de INFO y WARNING
 
-
-# Load the data
-celsius = np.array([-40, -10, 0, 8, 15, 22, 38, 33, 57, 44, 12, 90, 76, 788, 65, 89], dtype=float)
-fahrenheit = np.array([-40, 14, 32, 46, 59, 72, 100, 91.4, 134.6, 111.2, 53.6, 194, 168.8, 1450.4, 149, 192.2], dtype=float)
+# Load the data from CSV
+data = pd.read_csv('Data/celsius_fahrenheit_data.csv')
+celsius = data['Celsius'].values
+fahrenheit = data['Fahrenheit'].values
 
 # Create the model
 model = tf.keras.Sequential([
@@ -19,7 +20,7 @@ model = tf.keras.Sequential([
 model.compile(loss='mean_squared_error', optimizer=tf.keras.optimizers.Adam(0.1))
 
 # Train the model
-history = model.fit(celsius, fahrenheit, epochs=1000, verbose=False)
+history = model.fit(celsius, fahrenheit, epochs=500, verbose=False)
 print("Finished training the model")
 
 # Display training statistics
