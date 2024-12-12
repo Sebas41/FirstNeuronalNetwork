@@ -1,0 +1,44 @@
+MiPrimeraRedNeuronal/
+│
+├── datasets/             # Scripts relacionados con datos
+│   ├── data_loader.py    # Funciones para cargar y procesar datos
+│   ├── preprocess.py     # Funciones de preprocesamiento
+│   └── celsius_fahrenheit_data.csv  # Archivo de datos
+│
+├── models/               # Implementaciones de modelos
+│   ├── simple_nn.py      # Red neuronal básica (fully connected)
+│   ├── cnn.py            # Red convolucional (CNN)
+│   └── rnn.py            # Red recurrente (RNN)
+│
+├── training/             # Scripts relacionados con el entrenamiento
+│   ├── train.py          # Lógica de entrenamiento y evaluación
+│   ├── metrics.py        # Cálculo de métricas personalizadas
+│   └── callbacks.py      # Callbacks para optimización avanzada
+│
+├── utils/                # Funciones auxiliares
+│   ├── config.py         # Archivo de configuración (rutas, hiperparámetros)
+│   ├── visualizations.py # Funciones para graficar resultados
+│   └── helpers.py        # Utilidades generales (e.g., guardar modelos)
+│
+├── tests/                # Scripts de pruebas
+│   ├── test_data.py      # Pruebas relacionadas con la carga de datos
+│   ├── test_models.py    # Pruebas de las arquitecturas
+│   └── test_training.py  # Pruebas del proceso de entrenamiento
+│
+├── notebooks/            # Notebooks interactivos para exploración
+│   ├── simple_nn.ipynb   # Notebook para la red neuronal básica
+│   ├── cnn_experiments.ipynb  # Notebook para experimentos con CNN
+│   └── rnn_experiments.ipynb  # Notebook para experimentos con RNN
+│
+├── logs/                 # Registro del entrenamiento
+│   ├── tensorboard/      # Logs para TensorBoard
+│   └── train_logs.txt    # Resumen de entrenamiento en texto
+│
+├── outputs/              # Modelos entrenados y gráficos
+│   ├── models/           # Modelos serializados (e.g., .h5, .pb)
+│   ├── plots/            # Gráficos generados durante el análisis
+│   └── predictions/      # Salidas del modelo en formato CSV
+│
+├── requirements.txt      # Lista de dependencias del proyecto
+├── README.md             # Documentación principal del proyecto
+└── main.py               # Punto de entrada principal para ejecutar el proyecto
