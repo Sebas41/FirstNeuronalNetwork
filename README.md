@@ -26,6 +26,6 @@ Este repositorio documenta mi primer proyecto de red neuronal, diseñado para ap
 - Experimentar con datasets más complejos.
 - Implementar técnicas avanzadas como regularización o ajuste de hiperparámetros.
 
-Este repositorio marca el inicio de mi exploración en inteligencia artificial y redes neuronales. ¡Espero que inspire a otros a sumergirse en este fascinante campo! 🚀🧠
+Este repositorio marca el inicio de mi exploración en inteligencia artificial y redes neuronales. ¡Espero que inspire a otros a sumergirse en este fascinante campo! 🚀🧠.
 
 ---
